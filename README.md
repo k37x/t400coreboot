@@ -2,7 +2,7 @@
 
 Here are all the files for configuring your own coreboot rom or you can flash a precompiled one. My goal was to install coreboot to do the Core 2 Quad modification, currently waiting on the CPU.
 
-!(https://github.com/k37x/t400coreboot/blob/main/hwinfo.PNG)
+!(/hwinfo.png)
 
 # Compiled ROMs
 All ROMs are intended for a T400 with an Intel GPU, 1280x800 screen. Extracted ME,Gbe and descriptor from original BIOS and added them in the config. Enabled Intel WiFi cards, although it seemed to work regardless of this option being checked. Load the config and verify all the selected options for your machine. Coreboot documentation goes over how to create toolchain and make your own ROM if you wish.
