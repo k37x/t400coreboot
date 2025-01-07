@@ -7,6 +7,8 @@ All ROMs are intended for a T400 with an Intel GPU, 1280x800 screen. Extracted M
 
 T400_EDK2 contains the flashable rom and config for that rom. Using EDK2 payload. This will only allow UEFI x64 booting, no BIOS. Windows 7 stock EFI did not boot, Windows 10 x64 runs fine. Windows 11's latest update requires SSE4.2, as a result it will NOT boot. Core 2 only has SSE4.1. 
 
+You can adjust the config with your own payload. I tested SeaBIOS 1.16.3 and it flashed fine. Windows 7 would install but fail to boot on the second phase. Linux distros worked for the most part but were a little iffy and some took long to boot. I assume you need the VGA bios but I couldn't seem to find or extract it. I used libgfxinit instead.
+
 # How to Flash?
 You'll need to externally flash your BIOS chip, I used a CH341a programmer to do this. Unfortunately, the bios chip is beneath the magnesium chassis requiring you to disassemble the entire machine. Some people have cut out the part of the shell that covers the chip, it's up to you but be careful not to cut into the board. 
 
